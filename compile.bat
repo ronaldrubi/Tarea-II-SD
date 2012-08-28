@@ -1,0 +1,1 @@
+javac -d universidad src/servicio/ProfesorDTO.java src/servicio/GrupoDTO.java src/servicio/ProfesorService.java src/servicio/GrupoService.java src/servicio/Universidad.java

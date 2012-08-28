@@ -1,0 +1,108 @@
+//INSERT PROFESOR
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <insertProfesor xmlns="http://service">
+       <cedula>114290270</cedula>
+       <area>Informatica</area>
+       <nombre>Ronald Rubi</nombre>
+       <titulo>Bachiller</titulo>
+       <correo>ronald-10@hotmail.com</correo>
+       <telefono>86656400</telefono>
+     </insertProfesor >
+   </soap:Body>
+</soap:Envelope>
+
+//UPDATE PROFESOR
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <updateProfesor xmlns="http://service">
+       <cedula>114290270</cedula>
+       <area>Informatica</area>
+       <nombre>Ronald Chacon</nombre>
+       <titulo>Licenciatura</titulo>
+       <correo>ronald-10@hotmail.com</correo>
+       <telefono>86656400</telefono>
+     </updateProfesor >
+   </soap:Body>
+</soap:Envelope>
+
+//DELETE PROFESOR
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <eliminarProfesor xmlns="http://service">
+       <id>114290270</id>
+     </eliminarProfesor>
+   </soap:Body>
+</soap:Envelope>
+
+//FIND ALL PROFESOR
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <findAllProfesor xmlns="http://service/">
+       </findAllProfesor>
+   </soap:Body>
+</soap:Envelope>
+
+//FIND PROFESOR
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <findProfesor xmlns="http://service">
+       <profesorId>101110111</profesorId>
+     </findProfesor>
+   </soap:Body>
+</soap:Envelope>
+
+//INSERT GRUPO
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <insertGrupo xmlns="http://service">
+       <aula>Z43</aula>
+       <horario>K,J 1:00-3:00pm</horario>
+       <id_profesor>101110111</id_profesor>
+       <nombre>Calculo I</nombre>
+       <numero>30</numero>
+       <sigla>MAT-221</sigla>
+     </insertGrupo >
+   </soap:Body>
+</soap:Envelope>
+
+//UPDATE GRUPO
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <updateGrupo xmlns="http://service">
+	   <idGrupo>3</idGrupo>
+       <aula>Z43</aula>
+       <horario>K,J 1:00-3:00pm</horario>
+       <idProfesor>101110111</idProfesor>
+       <nombre>Calculo 25</nombre>
+       <numero>30</numero>
+       <sigla>MAT-221</sigla>
+     </updateGrupo >
+   </soap:Body>
+</soap:Envelope>
+
+//DELETE GRUPO
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <eliminarGrupo xmlns="http://service">
+       <id>3</id>
+     </eliminarGrupo >
+   </soap:Body>
+</soap:Envelope>
+
+//FIND ALL GRUPO
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <findAllGrupo xmlns="http://service/">
+       </findAllGrupo>
+   </soap:Body>
+</soap:Envelope>
+
+//FIND GRUPO
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <findGrupo xmlns="http://service">
+       <grupoId>2</grupoId>
+     </findGrupo>
+   </soap:Body>
+</soap:Envelope>
